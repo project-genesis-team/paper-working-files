@@ -1,0 +1,89 @@
+
+\section{section - example} 
+		
+\subsection{subsection - example}
+Here's everything you could ever want to know!
+
+%figure
+\begin{figure}[h] % [t], [b], [p]
+\centering
+\includegraphics[width=4cm]{./images/cat_sip.jpg}
+\caption{wait...what?}
+\end{figure}
+
+\section{section - das ist das...}
+...text2 file
+
+\subsection{itemize (subsection)}
+
+	\begin{itemize}
+		\item this is item 1
+		\item and this is item 2
+	\end{itemize}
+	
+\subsection{theorems (subsection)}
+		
+	\label{mytheorem}
+		Let $G$ and $H$ be Lie groups with Lie algebras ...
+		Then:
+		\begin{enumerate}
+			\item blabla nr. 1
+			\item blabla nr. 2
+		\end{enumerate}
+
+\underline{Proof}:
+here we prove theorem with the number \ref{mytheorem}.
+
+\section{section}
+
+\subsection{hyperlink, book reference, footnote (subsubsection)}
+
+\url{http://en.wikipedia.org/wiki/LaTeX}
+
+this is a ref with the number \cite{testBook}.
+
+And now follows a footnote. 
+\footnote{here is the footnote}
+
+\begin{center}
+  \begin{tabular}{{|} c {|} c {|} c {|} c {|}} % four centered text blocks
+    \hline
+    1 & x & 7 & hi \\ \hline % the four textblock contain the data 1, x, 7 and hi
+    4 & 5 & 6 & 6 \\ \hline
+    7 & 8 & g & 6 \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{ l {|} c {|}{|} r r {|}} % now also using left, right and double seperators
+    \hline
+    1 & 2 & 3 & 3 \\ \hline
+    4 & 5 & 6 & 6 \\ \hline
+    7 & 8 & 9 & 6 \\
+    \hline
+  \end{tabular} 
+\end{center} 
+
+% variant 1
+	\begin{equation}
+	\label{testEquation}
+		a^2+b^2=c^2
+	\end{equation}
+
+Verweis auf Formel mit der Nummer (\ref{testEquation}).
+
+% variant 2
+	\[
+		g_{\mu\mu'} g_{\nu\nu'} \varepsilon^{\mu'\nu'\rho\sigma} 
+		= \det(g_{\mu\nu}) \varepsilon_{\mu\nu\rho'\sigma'} g^{\rho\rho'} g^{\sigma\sigma'}
+	\]
+	
+% variant 3
+	$$
+		g_{\mu\mu'} g_{\nu\nu'} \varepsilon^{\mu'\nu'\rho\sigma} 
+		= \det(g_{\mu\nu}) \varepsilon_{\mu\nu\rho'\sigma'} g^{\rho\rho'} g^{\sigma\sigma'}
+		= G
+	$$
+
+		
